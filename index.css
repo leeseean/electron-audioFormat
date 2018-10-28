@@ -1,0 +1,96 @@
+body {
+    -webkit-app-region: drag;
+}
+
+.outter-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner-wrapper {
+    padding: 20px;
+}
+
+.file-wrapper, .transfer-wrapper {
+    white-space: nowrap;
+    text-align: center;
+}
+
+.file-wrapper {
+    margin: 0 auto 20px auto;
+}
+
+.transfer-wrapper {
+    margin: 0 auto;
+}
+
+.file-button, .transfer-button {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 0 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    height: 24px;
+    line-height: 24px;
+    user-select: none;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    position: relative;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+    color: rgba(0, 0, 0, 0.65);
+    background-color: #fff;
+    border-color: #d9d9d9;
+}
+
+.file-button:hover, .file-button:focus, .transfer-button:hover, .transfer-button:focus {
+    color: #40a9ff;
+    background-color: #fff;
+    border-color: #40a9ff;
+}
+
+.file-input, .transfer-input {
+    font-variant: tabular-nums;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    padding: 0 11px;
+    width: 300px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.65);
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    transition: all .3s;
+}
+
+.file-input::-webkit-input-placeholder, .transfer-input::-webkit-input-placeholder {
+    color: #bfbfbf;
+}
+
+.file-input:hover, .transfer-input:hover {
+    border-color: #40a9ff;
+    border-right-width: 1px !important;
+}
+
+.file-input:focus, .transfer-input:focus {
+    border-color: #40a9ff;
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    border-right-width: 1px !important;
+}
+
+.transfer-percent {
+    color: rgba(0, 0, 0, 0.45);
+}

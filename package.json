@@ -1,0 +1,28 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager ./ audioFormat  --platform=win32 --arch=x64 --out ./outApp --overwrite"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^3.0.6",
+    "electron-packager": "^12.2.0"
+  },
+  "dependencies": {
+    "ffmpeg-binaries": "^4.0.0",
+    "fluent-ffmpeg": "^2.1.2"
+  }
+}

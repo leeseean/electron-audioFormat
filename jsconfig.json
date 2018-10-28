@@ -1,0 +1,14 @@
+{
+    "typeAcquisition": {
+        "include": [
+            "fluent-ffmpeg",
+            "electron"
+        ]
+    },
+    "compilerOptions": {
+        "experimentalDecorators": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

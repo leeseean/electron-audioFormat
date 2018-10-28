@@ -1,19 +1,17 @@
 {
-  "name": "electron-quick-start",
+  "name": "audio-transfer",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "音频格式转换程序",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "build": "electron-packager ./ audioFormat  --platform=win32 --arch=x64 --out ./outApp --overwrite"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "ffmpeg",
+    "audio",
+    "transfer"
   ],
   "author": "GitHub",
   "license": "CC0-1.0",
